@@ -3,7 +3,8 @@
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="app.css"/>
+	<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="css/card-element.css" />
 	<script defer src="app.js"></script>
 	<title>Portafolio</title>
 </head>
@@ -20,7 +21,7 @@
 		<nav class="nav">
 			<ul class="ul">
 				<li class="li"><a href="#inicio" class="a">Inicio</a></li>
-				<li class="li"><a href="#about" class="a">Acerca de</a></li>
+				<li class="li"><a href="#about" class="a">Acerca de mi</a></li>
 				<li class="li"><a href="#works" class="a">Trabajos</a></li>
 				<li class="li"><a href="#contacs" class="a">Contactos</a></li>
 			</ul>
@@ -30,16 +31,22 @@
 	<main class="main">
 		<section class="inicio" id="inicio">
 			<div class="section">
-				<img src="src\20221103_122846.jpg" alt="Imagen" class="img" loading="lazy">
-				<h2 class="h2">Daniel Alfaro</h2>
-				<h3 class="h3">Full-Stack Developer</h3>
+				<h2 class="name">Daniel Alfaro</h2>
+				<h3 class="level">Full-Stack Developer</h3>
+
+				<div class="social_block">
+					<a class="social_media" href="www.linkedin.com/in/daniel-alfaro-gamez-116053316"><img src="src\linkedin.png" alt="Imagen" class="social"/></a>
+					<a class="social_media" href="#"><img src="src\git.png" alt="Imagen" class="social"/></a>
+					<a class="social_media" href="https://twitter.com/DanielF26701545"><img src="src\X-Logo.png" alt="Imagen" class="social"/></a>
+				</div>
 			</div>
+			<img src="src\20221103_122846.jpg" alt="Imagen" class="img" loading="lazy">
 		</section>
 
 		<section class="acerca_de" id="about">
-			<section class="info" id="about">
-				<div class="card">
-					<div class="tools">
+			<h2 class="title">Acerca de mi</h2>
+			<div class="card">
+				<div class="tools">
 					<div class="circle">
 						<span class="red box"></span>
 					</div>
@@ -49,52 +56,34 @@
 					<div class="circle">
 						<span class="green box"></span>
 					</div>
-					</div>
-					<div class="card__content">
-						<h2 class="title">ACERCA DE MI</h2>
-						<p class="p">Soy un estudiante de quinto año de ingeniería en Sistemas y computación, especializado en desarrollo web a nivel Full-Stack, con valores de disciplina, compromiso, innovador y trabajo en equipo.</p><br><br>
-						<button class="descargar" id="CURRICULUM">CURRICULUM</button>
-					</div>
+					<h1 class="title_card">Informacion acerca de</h1>
 				</div>
-			</section>
+				<div class="card__content">
+					<h1 class="about_title">Soy desarrollador de aplicaciones moviles</h1>
+					<h1 class="about_description">Ingeniero en Sistemas y Computación especializado en las ciencias de datos y en el desarrollo de aplicaciones móviles. Mi pasión siempre ha sido las ciencias y la tecnología, por lo que el descubrimiento sobre el funcionamiento de los programas y de los sistemas es uno de mis pasatiempos favoritos.</h1>
+					<h1 class="about_description">Reconozco la importancia de los dispositivos móviles hoy en día, por lo que siempre es buena idea llevar un sistema al formato para estos dispositivos con el objetivo de crear un sistema rápido y cómodo para el usuario.</h1>
+				</div>
+			</div>
 
-			<section class="lenguajes" id="skills">
-				<h2 class="h2">LENGUAJES Y TECNOLOGIAS DOMINADAS</h2>
-				<div class="grid">
-					<div class="article">
-						<img src="src\html5.png" alt="Imagen" class="img" loading="lazy">
-						<h4 class="h4">HTML5</h4>
-					</div>
-					<div class="article">
-						<img src="src\css.png" alt="Imagen" class="img" loading="lazy">
-						<h4 class="h4">CSS</h4>
-					</div>
-					<div class="article">
-						<img src="src\asp-net.png" alt="Imagen" class="img" loading="lazy">
-						<h4 class="h4">ASP.NET</h4>
-					</div>
-					<div class="article">
-						<img src="src\php.png" alt="Imagen" class="img" loading="lazy">
-						<h4 class="h4">PHP</h4>
-					</div>
-					<div class="article">
-						<img src="src\flutter.png" alt="Imagen" class="img" loading="lazy">
-						<h4 class="h4">FLUTTER</h4>
-					</div>
-					<div class="article">
-						<img src="src\javascript.png" alt="Imagen" class="img" loading="lazy">
-						<h4 class="h4">JAVASCRIPT</h4>
-					</div>
-					<div class="article">
-						<img src="src\python.png" alt="Imagen" class="img" loading="lazy">
-						<h4 class="h4">PYTHON</h4>
-					</div>
-					<div class="article">
-						<img src="src\mysql.png" alt="Imagen" class="img" loading="lazy">
-						<h4 class="h4">MySql</h4>
-					</div>
-				</div>
-			</section>
+			<h2 class="title">Lenguajes de programacion dominados</h2>
+			<div class="languajes">
+				<img src="src\javascript.png" alt="Imagen" class="img javascript" loading="lazy">
+				<img src="src\Typescript.png" alt="Imagen" class="img typescript" loading="lazy">
+				<img src="src\java.jpg" alt="Imagen" class="img java" loading="lazy">
+				<img src="src\dart.png" alt="Imagen" class="img dart" loading="lazy">
+				<img src="src\csharp.png" alt="Imagen" class="img csharp" loading="lazy">
+				<img src="src\php.png" alt="Imagen" class="img php" loading="lazy" >
+				<img src="src\html.jpg" alt="Imagen" class="img html" loading="lazy">
+				<img src="src\css.png" alt="Imagen" class="img css" loading="lazy">
+			</div>
+			<h2 class="languaje-name" id="display">Selecciona un lenguaje</h2>
+			<h2 class="title">Frameworks y tecnologias con experiencia</h2>
+			<div class="languajes">
+				<img src="src\Flutter.png" alt="Imagen" class="img" loading="lazy">
+				<img src="src\ionic.png" alt="Imagen" class="img" loading="lazy">
+				<img src="src\react.png" alt="Imagen" class="img" loading="lazy">
+				<img src="src\android.png" alt="Imagen" class="img" loading="lazy">
+			</div>
 		</section>
 		<section class="trabajos" id="works">
 			<h2 class="h2">TRABAJOS PREVIOS REALIZADOS</h2>
@@ -110,15 +99,11 @@
 				</div>
 				<div class="column2">
 					<h3 class="h3">Redes sociales</h3>
-					<div class="grid_secundario">
-						<a class="social_media" href="www.linkedin.com/in/daniel-alfaro-gamez-116053316"><img src="src\linkedin.png" alt="Imagen" class="social"></button>
-						<a class="social_media" href="https://twitter.com/DanielF26701545"><img src="src\twitter.png" alt="Imagen" class="social"></button>
-						<a class="social_media" href="#"><img src="src\git.png" alt="Imagen" class="social"></button>
-					</div>
 				</div>
 			</div>
 		</section>
 	</main>
 
 </body>
+
 </html>

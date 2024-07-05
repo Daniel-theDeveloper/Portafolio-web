@@ -11,7 +11,7 @@ html{
 
 body{
     margin: 0;
-    background-image: url("src/fondo.png");
+    background-image: url("../src/fondo.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,11 +36,11 @@ section[id] {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 10;
 }
 .header .h1 .a{
     color: #37FF8B;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -80,37 +80,90 @@ section[id] {
 }
 .inicio{
     width: 100%;
-    min-height: 960px;
+    min-height: 760px;
     margin-top: -1em;
     margin-bottom: -1em;
     background: rgba(0, 0, 26, 0.880);
 
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+.inicio .section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 125px;
+}
 .inicio .img{
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     border-radius: 100%;
 }
-.inicio .h2{
+.inicio .name{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    color: aqua;
-    font-size: 70px;
+    color: rgb(0, 255, 255);
+    font-size: 50px;
     font-weight: bold;
 }
-.inicio .h3{
+.inicio .level{
     color: white;
-    font-size: 30px;
-    margin-top: -50px;
+    font-size: 25px;
+    margin-top: -40px;
+}
+.inicio .social_media {
+    margin-right: 10px;
+}
+.inicio .social {
+    height: 40px;
+    width: 40px;
+    filter: invert();
 }
 .acerca_de{
-    display: grid;
-    grid-template-columns: 100%;
+    display: flex;
+    height: 980px;
+    flex-direction: column;
+    background-color: rgb(0, 0, 26);
+    align-items: center;
+}
+.acerca_de .title{
+    width: 80%;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #37FF8B;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+.acerca_de .languajes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    width: 60%;
+}
+.languajes .img{
+    transition: 0.3s;
+    height: 90px;
+    width: 90px;
+    margin-right: 18px;
+    border-radius: 10px;
+}
+.languajes .img:hover{
+    transition: 0.3s;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+.languaje-name{
+    color: rgb(0, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .info{
     padding-top: 50px;
@@ -127,137 +180,6 @@ section[id] {
 .info .p1{
     color: rgb(0, 69, 116);
     font-size: 20px;
-}
-.card{
-    width: 600px;
-    min-height: 350px;
-    margin: 0 auto;
-    background-color: #011522;
-    border-radius: 8px;
-}
-.card__content{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.info .title{
-    color: aqua;
-    font-size: 25px;
-    font-weight: bold;
-}
-.info .p{
-    text-align: justify;
-    color: white;
-}
-.tools{
-    display: flex;
-    align-items: center;
-    padding: 9px;
-}
-
-.circle{
-    padding: 0 4px;
-}
-
-.box{
-    display: inline-block;
-    align-items: center;
-    width: 10px;
-    height: 10px;
-    padding: 1px;
-    border-radius: 50%;
-}
-
-.red{
-    background-color: #ff605c;
-}
-
-.yellow{
-    background-color: #ffbd44;
-}
-
-.green{
-    background-color: #00ca4e;
-}
-.descargar{
-    --green: #1BFD9C;
-    cursor: pointer;
-    font-size: 15px;
-    padding: 0.7em 2.7em;
-    letter-spacing: 0.06em;
-    position: relative;
-    font-family: inherit;
-    border-radius: 0.6em;
-    overflow: hidden;
-    transition: all 0.3s;
-    line-height: 1.4em;
-    border: 2px solid var(--green);
-    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
-    color: var(--green);
-    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
-}
-.descargar:hover{
-    color: #82ffc9;
-    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
-}
-
-.descargar:before{
-    content: "";
-    position: absolute;
-    left: -4em;
-    width: 4em;
-    height: 100%;
-    top: 0;
-    transition: transform .4s ease-in-out;
-    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
-}
-
-.descargar:hover:before{
-    transform: translateX(15em);
-}
-.lenguajes{
-    min-height: 680px;
-    background-color: white;
-    align-items: center;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-.lenguajes .h2{
-    color: rgb(0, 52, 87);
-    font-size: 40px;
-    font-weight: bold;
-}
-.lenguajes .grid{
-    display: grid;
-    grid-template-columns: 180px 180px 180px 180px;
-}
-.lenguajes .article{
-    color: white;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
-    transition: 0.5s;
-    background-color: #377dff;
-}
-.lenguajes .article:hover{
-    transition: 0.5s;
-    transform: scale(0.9);
-}
-.lenguajes .article .img{
-    transition: 0.5s;
-    height: 50px;
-    width: 50px;
-    opacity: 70%;
-}
-.lenguajes .article:hover .img{
-    transition: 0.5s;
-    opacity: 100%;
-    filter: invert(100%);
-
-}
-.lenguajes .h4{
-    font-size: 18px;
-    font-weight: bold;
 }
 .trabajos{
     min-height: 480px;
@@ -289,10 +211,6 @@ section[id] {
 .contactos .h4{
     color: white;
 }
-.contactos .grid_secundario{
-    display: grid;
-    grid-template-columns: 80px 80px 80px;
-}
 .contactos .social_media{
     position: relative;
     display: inline-block;
@@ -301,20 +219,11 @@ section[id] {
     border: 0;
     background: transparent;
 }
-.contactos .social{
-    height: 45px;
-    width: 45px;
-    filter: invert();
-}
 .footer{
     background-color: wheat;
     margin-top: -20px;
 }
 @media (min-width: 1500px) {
-    .acerca_de{
-        display: grid;
-        grid-template-columns: 45% auto;
-    }
     .info{
         padding-left: 50px;
         min-height: 680px;
@@ -376,12 +285,9 @@ section[id] {
         filter: invert(100%);
         
     }
-    .lenguajes .grid{
-        grid-template-columns: 180px 180px;
-    }
-    .card {
-        width: 400px;
-        min-height: 400px;
+    .inicio{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .contactos{
         min-height: 250px;
