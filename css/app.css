@@ -80,7 +80,7 @@ section[id] {
 }
 .inicio{
     width: 100%;
-    min-height: 760px;
+    min-height: 900px;
     margin-top: -1em;
     margin-bottom: -1em;
     background: rgba(0, 0, 26, 0.880);
@@ -124,12 +124,12 @@ section[id] {
 }
 .acerca_de{
     display: flex;
-    height: 980px;
+    height: 1300px;
     flex-direction: column;
     background-color: rgb(0, 0, 26);
     align-items: center;
 }
-.acerca_de .title{
+.title{
     width: 80%;
     font-size: 30px;
     padding-top: 20px;
@@ -144,8 +144,7 @@ section[id] {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: 500px;
-    width: 60%;
+    min-height: 200px;
 }
 .languajes .img{
     transition: 0.3s;
@@ -182,16 +181,18 @@ section[id] {
     font-size: 20px;
 }
 .trabajos{
-    min-height: 480px;
-    background-color: white;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 1600px;
+    background-color: #353364;
+    align-items: center;
 }
-.trabajos .h2{
-    font-size: 30px;
-    font-weight: bold;
-    color: red;
+.works-list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 60px;
 }
 .contactos{
     min-height: 250px;
@@ -288,6 +289,17 @@ section[id] {
     .inicio{
         display: flex;
         flex-direction: column-reverse;
+        min-height: 1300px;
+    }
+    .inicio .section{
+        margin: 70px 0;
+        text-align: center;
+    }
+    .acerca_de .languajes{
+        display: grid;
+        grid-template-rows: 120px 120px;
+        grid-template-columns: 25% 25% 25% 25%;
+        min-height: 300px;
     }
     .contactos{
         min-height: 250px;

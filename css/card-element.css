@@ -2,9 +2,10 @@
     width: 80%;
     height: 350px;
     margin: 0 auto;
-    background-color: #1e1f26;
+    background-color: #24233b;
     border-radius: 8px;
     z-index: 1;
+    box-shadow: 0px 10px 10px #000;
 }
 
 .tools {
@@ -48,18 +49,24 @@
 }
 
 .card__content {
+    margin: 0px 15px 15px 15px;
+    height: 260px;
     padding: 15px;
     text-align: left;
+    background-color: #49465c;
+    border-radius: 5px;
 }
 
 .about_title {
     color: #00ffff;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
+    margin: 0;
 }
 
 .about_description {
-    font-size: 18px;
+    font-size: 17px;
+    text-align: justify;
     color: #fff;
 
 }

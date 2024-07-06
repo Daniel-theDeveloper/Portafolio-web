@@ -11,6 +11,11 @@ const php = document.querySelector(".php");
 const html = document.querySelector(".html");
 const css = document.querySelector(".css");
 
+const flutter = document.querySelector(".flutter");
+const ionic = document.querySelector(".ionic");
+const reactN = document.querySelector(".reactn");
+const android = document.querySelector(".android");
+
 function toggleMenu() {
     nav.classList.toggle("ulOpened");
 }
@@ -40,6 +45,19 @@ function displayCss() {
     document.getElementById("display").innerHTML = "css";
 }
 
+function displayFlutter() {
+    document.getElementById("display2").innerHTML = "flutter";
+}
+function displayIonic() {
+    document.getElementById("display2").innerHTML = "ionic - angular";
+}
+function displayReactN() {
+    document.getElementById("display2").innerHTML = "react native";
+}
+function displayAndroid() {
+    document.getElementById("display2").innerHTML = "android studio";
+}
+
 openmenubtn.addEventListener("click", toggleMenu);
 closemenubtn.addEventListener("click", toggleMenu);
 
@@ -51,3 +69,8 @@ csharp.addEventListener("mouseover", displayCsharp);
 php.addEventListener("mouseover", displayPhp);
 html.addEventListener("mouseover", displayHtml);
 css.addEventListener("mouseover", displayCss);
+
+flutter.addEventListener("mouseover", displayFlutter);
+ionic.addEventListener("mouseover", displayIonic);
+reactN.addEventListener("mouseover", displayReactN);
+android.addEventListener("mouseover", displayAndroid);
