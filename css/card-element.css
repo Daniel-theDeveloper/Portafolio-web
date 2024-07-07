@@ -1,6 +1,5 @@
 .card {
-    width: 80%;
-    height: 350px;
+    width: 60%;
     margin: 0 auto;
     background-color: #24233b;
     border-radius: 8px;
@@ -50,7 +49,6 @@
 
 .card__content {
     margin: 0px 15px 15px 15px;
-    height: 260px;
     padding: 15px;
     text-align: left;
     background-color: #49465c;
@@ -66,12 +64,7 @@
 
 .about_description {
     font-size: 17px;
-    text-align: justify;
+    text-align: left;
     color: #fff;
 
-}
-@media (max-width: 690px) {
-    .card {
-        min-height: 500px;
-    }
 }
