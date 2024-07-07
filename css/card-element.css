@@ -1,6 +1,7 @@
 .card {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
+    padding-bottom: 1px;
     background-color: #24233b;
     border-radius: 8px;
     z-index: 1;
@@ -63,8 +64,16 @@
 }
 
 .about_description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 17px;
     text-align: left;
     color: #fff;
 
+}
+
+.point {
+    margin-right: 10px;
+    color: #00ca4e;
 }

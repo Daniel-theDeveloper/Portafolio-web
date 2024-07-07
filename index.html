@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/works-element.css" />
 	<link rel="stylesheet" href="css/phone.css" />
 	<script defer src="app.js"></script>
+	<script src="https://kit.fontawesome.com/632150b31f.js" crossorigin="anonymous"></script>
 	<title>Portafolio</title>
 </head>
 
@@ -46,7 +47,7 @@
 				</div>
 				<div class="email-box">
 					<h1 class="email">danielalfarogamez@gmail.com</h1>
-					<a href="#" class="email-copy">Copiar</a>
+					<i class="fa-solid fa-copy email-copy"></i>
 				</div>
 			</div>
 
@@ -105,7 +106,8 @@
 				<div class="card__content">
 					<h1 class="about_title">Soy desarrollador de aplicaciones moviles</h1>
 					<h1 class="about_description">Ingeniero en Sistemas y Computación especializado en las ciencias de
-						datos y en el desarrollo de aplicaciones móviles. Mi pasión siempre ha sido las ciencias y la
+						datos y en el desarrollo de aplicaciones móviles. Graduado de la Universidad Tecnológica de El
+						Salvador en 2024. Mi pasión siempre ha sido las ciencias y la
 						tecnología, por lo que el descubrimiento sobre el funcionamiento de los programas y de los
 						sistemas es uno de mis pasatiempos favoritos.</h1>
 					<h1 class="about_description">Reconozco la importancia de los dispositivos móviles hoy en día, por
@@ -113,10 +115,39 @@
 						objetivo de crear un sistema rápido y cómodo para el usuario.</h1>
 				</div>
 			</div>
-
-			<h2 class="title" id="skils">Habilidades técnicas</h2>
-			<div class="row-basic">
-				<div class="block-basic">
+		</section>
+		<section class="skills" id="skills">
+			<h2 class="title" id="skils">Habilidades</h2>
+			<div class="skills-grid">
+				<div class="skills-left">
+					<div class="card">
+						<div class="tools">
+							<div class="circle">
+								<span class="red box"></span>
+							</div>
+							<div class="circle">
+								<span class="yellow box"></span>
+							</div>
+							<div class="circle">
+								<span class="green box"></span>
+							</div>
+							<h1 class="title_card">Panel informativo.txt</h1>
+						</div>
+						<div class="card__content">
+							<h1 class="about_title">Habilidades blandas:</h1>
+							<h1 class="about_description">
+								<i class="fa-solid fa-chevron-right point"></i>Trabajo en equipo
+							</h1>
+							<h1 class="about_description">
+								<i class="fa-solid fa-chevron-right point"></i>Gestión de tiempo
+							</h1>
+							<h1 class="about_description">
+								<i class="fa-solid fa-chevron-right point"></i>Inteligencia emocional
+							</h1>
+						</div>
+					</div>
+				</div>
+				<div class="skills-right">
 					<h2 class="subtitle">Fronted</h2>
 					<div class="languajes">
 						<div class="languaje-block">
@@ -140,8 +171,6 @@
 							<h1 class="languaje-name">CSS</h1>
 						</div>
 					</div>
-				</div>
-				<div class="block-basic">
 					<h2 class="subtitle">Backend</h2>
 					<div class="languajes">
 						<div class="languaje-block">
@@ -157,10 +186,6 @@
 							<h1 class="languaje-name">Java</h1>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row-basic">
-				<div class="block-basic">
 					<h2 class="subtitle">Frameworks y Tecnologías</h2>
 					<div class="languajes">
 						<div class="languaje-block">
@@ -180,49 +205,43 @@
 							<h1 class="languaje-name">Android</h1>
 						</div>
 					</div>
-				</div>
-				<div class="block-basic">
 					<h2 class="subtitle">Bases de datos</h2>
 					<div class="languajes">
 						<div class="languaje-block">
-							<img src="src\csharp.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\sql server.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">SQL Server</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\php.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\mySQL-logo.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">MySql</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\java.jpg" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\sqlite.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">SQLite</h1>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row-basic">
-				<div class="block-basic">
 					<h2 class="subtitle">Extras</h2>
 					<div class="languajes">
 						<div class="languaje-block">
-							<img src="src\csharp.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\Git_icon.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">Git</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\php.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\firebase.jpg" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">Firebase</h1>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		</section>
 		<section class="trabajos" id="works">
-			<h2 class="title">TRABAJOS PREVIOS REALIZADOS</h2>
-
+			<h2 class="title">Proyectos</h2>
 			<div class="works-list">
 
 				<div class="works">
 					<div class="works-left">
-						<h1 class="work-name">Clinica</h1>
+						<h1 class="work-name">Citas medicas</h1>
 						<h1 class="work-desc">Aplicacion de gestion de citas donde el usuario puede programar y manejar
 							citas medicas, creando un usuario.</h1>
 						<div class="tech">
@@ -231,94 +250,89 @@
 						</div>
 						<a href="https://appetize.io/app/b_r3yiffsdta3dkrknxten3xdfsm" class="button-play">
 							<div class="button-left">
-								<img src="src\play.png" alt="Imagen" class="button-icon" loading="lazy" />
+								<i class="fa-solid fa-play"></i>
 							</div>
 							<div class="button-right">
-								<h1 class="button-text">Probar aplicacion en linea</h1>
+								<h1 class="button-text">Probar demo</h1>
 							</div>
 						</a>
 						<a href="#" class="button-code">
 							<div class="button-left">
-								<img src="src\git.png" alt="Imagen" class="button-icon" loading="lazy" />
+								<i class="fa-brands fa-github"></i>
 							</div>
 							<div class="button-right">
-								<h1 class="button-text">Ver codigo fuente</h1>
+								<h1 class="button-text">Ver código fuente</h1>
 							</div>
 						</a>
 					</div>
 					<div class="works-right">
-						<div class="cellphone">
-							<div class="cellphone-top"></div>
-						</div>
+						<img src="src/screenshots/test.jpg" alt="work-screen" class="work-img" />
 					</div>
 				</div>
 
 				<div class="works">
 					<div class="works-left">
-						<h1 class="work-name">Tareas</h1>
-						<h1 class="work-desc">Aplicacion gestionadora de tareas diarias</h1>
+						<h1 class="work-name">Citas medicas</h1>
+						<h1 class="work-desc">Aplicacion de gestion de citas donde el usuario puede programar y manejar
+							citas medicas, creando un usuario.</h1>
 						<div class="tech">
-							<img src="src\ionic.png" alt="Imagen" class="img-tech" loading="lazy" />
-							<img src="src\typescript.png" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src\android.png" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src\java.jpg" alt="Imagen" class="img-tech" loading="lazy" />
 						</div>
-						<a href="https://appetize.io/app/7x3nqr22zi2scy76ccwgwkhpoe" class="button-play">
+						<a href="https://appetize.io/app/b_r3yiffsdta3dkrknxten3xdfsm" class="button-play">
 							<div class="button-left">
-								<img src="src\play.png" alt="Imagen" class="button-icon" loading="lazy" />
+								<i class="fa-solid fa-play"></i>
 							</div>
 							<div class="button-right">
-								<h1 class="button-text">Probar aplicacion en linea</h1>
+								<h1 class="button-text">Probar demo</h1>
 							</div>
 						</a>
 						<a href="#" class="button-code">
 							<div class="button-left">
-								<img src="src\git.png" alt="Imagen" class="button-icon" loading="lazy" />
+								<i class="fa-brands fa-github"></i>
 							</div>
 							<div class="button-right">
-								<h1 class="button-text">Ver codigo fuente</h1>
+								<h1 class="button-text">Ver código fuente</h1>
 							</div>
 						</a>
 					</div>
 					<div class="works-right">
-						<div class="cellphone">
-							<div class="cellphone-top"></div>
-						</div>
+						<img src="src/screenshots/test.jpg" alt="work-screen" class="work-img" />
 					</div>
 				</div>
-			</div>
 
-			<div class="works">
-				<div class="works-left">
-					<h1 class="work-name">Aplicacion social</h1>
-					<h1 class="work-desc">Red social donde los usuarios pueden compartir publicaciones y conocer nueva
-						gente.</h1>
-					<div class="tech">
-						<img src="src\react.png" alt="Imagen" class="img-tech" loading="lazy" />
-						<img src="src\javascript.png" alt="Imagen" class="img-tech" loading="lazy" />
+				<div class="works">
+					<div class="works-left">
+						<h1 class="work-name">Citas medicas</h1>
+						<h1 class="work-desc">Aplicacion de gestion de citas donde el usuario puede programar y manejar
+							citas medicas, creando un usuario.</h1>
+						<div class="tech">
+							<img src="src\android.png" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src\java.jpg" alt="Imagen" class="img-tech" loading="lazy" />
+						</div>
+						<a href="https://appetize.io/app/b_r3yiffsdta3dkrknxten3xdfsm" class="button-play">
+							<div class="button-left">
+								<i class="fa-solid fa-play"></i>
+							</div>
+							<div class="button-right">
+								<h1 class="button-text">Probar demo</h1>
+							</div>
+						</a>
+						<a href="#" class="button-code">
+							<div class="button-left">
+								<i class="fa-brands fa-github"></i>
+							</div>
+							<div class="button-right">
+								<h1 class="button-text">Ver código fuente</h1>
+							</div>
+						</a>
 					</div>
-					<a href="#" class="button-play">
-						<div class="button-left">
-							<img src="src\play.png" alt="Imagen" class="button-icon" loading="lazy" />
-						</div>
-						<div class="button-right">
-							<h1 class="button-text">Probar aplicacion en linea</h1>
-						</div>
-					</a>
-					<a href="#" class="button-code">
-						<div class="button-left">
-							<img src="src\git.png" alt="Imagen" class="button-icon" loading="lazy" />
-						</div>
-						<div class="button-right">
-							<h1 class="button-text">Ver codigo fuente</h1>
-						</div>
-					</a>
-				</div>
-				<div class="works-right">
-					<div class="cellphone">
-						<div class="cellphone-top"></div>
+					<div class="works-right">
+						<img src="src/screenshots/test.jpg" alt="work-screen" class="work-img" />
 					</div>
 				</div>
-			</div>
 
+			</div>
 		</section>
 		<section class="contactos" id="experience">
 			<div class="grid_principal">

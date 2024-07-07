@@ -1,18 +1,36 @@
+.works-list {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .works {
-    display: grid;
-    grid-template-columns: 53% 47%;
-    width: 600px;
+    transition: 1s ease;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #25254b;
+    width: 400px;
     padding: 20px;
     border-radius: 10px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #fff;
+    box-shadow: 0px 0px 20px 4px #000;
+}
+
+.works:hover {
+    transition: 1s ease;
+    background-color: #313169;
+    box-shadow: 0px 0px 20px 4px #00ffff;
 }
 
 .works-left {
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-right: 10px;
 }
 
 .work-name {
@@ -24,8 +42,8 @@
 
 .work-desc {
     color: #fff;
-    font-size: 18px;
-    text-align: justify;
+    font-size: 17px;
+    text-align: left;
 }
 
 .tech {
@@ -35,49 +53,37 @@
 }
 
 .img-tech {
-    height: 40px;
-    width: 40px;
-    margin-right: 20px;
+    height: 35px;
+    width: 35px;
+    margin-right: 16px;
 }
 
 .button-play {
     transition: .5s ease;
     margin-bottom: 20px;
-    padding: 4px;
+    padding: 6px;
     display: grid;
     grid-template-columns: 15% 85%;
-    background: linear-gradient(to right, rgba(73, 156, 234, 1) 0%, rgba(32, 227, 117, 1) 50%, rgba(73, 156, 234, 1) 100%);
-    background-size: 300%;
-    background-position: left;
-    border-radius: 15px;
-    color: #fff;
-}
-
-.button-play:hover {
-    transition: .5s ease;
-    background-size: 320%;
-    background-position: right;
-    color: #ffff00;
+    background: transparent;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #37FF8B;
+    color: #37FF8B;
 }
 
 .button-code {
     transition: .5s ease;
     margin-bottom: 20px;
-    padding: 4px;
+    padding: 6px;
     display: grid;
     grid-template-columns: 15% 85%;
-    background: linear-gradient(to right, rgba(255, 54, 141, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 0, 153, 1) 100%);
-    background-size: 300%;
-    background-position: left;
-    border-radius: 15px;
-    color: #fff;
-}
-
-.button-code:hover {
-    transition: .5s ease;
-    background-size: 320%;
-    background-position: right;
-    color: #ffff00;
+    background: transparent;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ff005d;
+    color: #ff005d;
 }
 
 .button-left {
@@ -85,11 +91,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.button-icon {
-    width: 30px;
-    height: 30px;
 }
 
 .button-right {
@@ -100,8 +101,9 @@
 }
 
 .button-text {
+    margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -110,23 +112,10 @@
     flex-direction: column;
     align-items: center;
 }
-
-.cellphone {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 480px;
-    width: 240px;
-    background-color: #fff;
+.work-img {
+    width: 190px;
     border-radius: 20px;
     border-style: solid;
-    border-width: 6px;
-    border-color: #000;
-}
-
-.cellphone-top {
-    min-height: 22px;
-    width: 130px;
-    background-color: #000;
-    border-radius: 0 0 20px 20px;
+    border-width: 8px;
+    border-color: #1a1a1a;
 }
