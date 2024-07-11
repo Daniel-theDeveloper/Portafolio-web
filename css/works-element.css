@@ -72,6 +72,12 @@
     color: #37FF8B;
 }
 
+.button-play:hover {
+    transition: .5s ease;
+    border-color: #00ffff;
+    color: #00ffff;
+}
+
 .button-code {
     transition: .5s ease;
     margin-bottom: 20px;
@@ -84,6 +90,12 @@
     border-width: 3px;
     border-color: #ff005d;
     color: #ff005d;
+}
+
+.button-code:hover {
+    transition: .5s ease;
+    border-color: #00ffff;
+    color: #00ffff;
 }
 
 .button-left {
