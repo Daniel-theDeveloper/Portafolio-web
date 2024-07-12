@@ -16,10 +16,10 @@
 	<header class="header">
 		<h1 class="h1"><a href="#" class="a">Portafolio</a></h1>
 		<button class="open-menu" aria-label="open-menu">
-			<img src="src\menu.png" alt="menu" class="menu_buttom_open">
+			<img src="src\icons\menu.png" alt="menu" class="menu_buttom_open">
 		</button>
 		<button class="close-menu" aria-label="close-menu">
-			<img src="src\close.png" alt="menu" class="menu_buttom_close">
+			<img src="src\icons\close.png" alt="menu" class="menu_buttom_close">
 		</button>
 		<nav class="nav">
 			<ul class="ul">
@@ -47,7 +47,7 @@
 					</a>
 				</div>
 				<div class="email-box">
-					<h1 class="email">danielalfarogamez@gmail.com</h1>
+					<h1 class="email" id="email">danielalfarogamez@gmail.com</h1>
 					<i class="fa-solid fa-copy email-copy"></i>
 				</div>
 			</div>
@@ -99,40 +99,34 @@
 		</section>
 
 		<section class="acerca_de" id="about">
-			<h2 class="title">Acerca de mi</h2>
+			<h2 class="about-me-title">Acerca de mi</h2>
 			<div class="about-content">
-				<div class="card">
-					<div class="tools">
-						<div class="circle">
-							<span class="red box"></span>
-						</div>
-						<div class="circle">
-							<span class="yellow box"></span>
-						</div>
-						<div class="circle">
-							<span class="green box"></span>
-						</div>
-						<h1 class="title_card">Panel informativo.txt</h1>
-					</div>
-					<div class="card__content">
-						<h1 class="about_title">Soy desarrollador de aplicaciones móviles</h1>
-						<h1 class="about_description">Ingeniero en Sistemas y Computación especializado en las ciencias
-							de
-							datos y en el desarrollo de aplicaciones móviles. Graduado de la Universidad Tecnológica de
-							El
-							Salvador en 2024. Mi pasión siempre ha sido las ciencias y la
-							tecnología, por lo que el descubrimiento sobre el funcionamiento de los programas y de los
-							sistemas es uno de mis pasatiempos favoritos.</h1>
-						<h1 class="about_description">Reconozco la importancia de los dispositivos móviles hoy en día,
-							por
-							lo que siempre es buena idea llevar un sistema al formato para estos dispositivos con el
-							objetivo de crear un sistema rápido y cómodo para el usuario.</h1>
-					</div>
+				<div class="about-left"></div>
+				<div class="about-right">
+					<h1 class="about-me">Ingeniero en Sistemas y Computación especializado en las ciencias
+						de
+						datos y en el desarrollo de aplicaciones móviles. Graduado de la Universidad Tecnológica de
+						El
+						Salvador en 2024. Mi pasión siempre ha sido las ciencias y la
+						tecnología, por lo que el descubrimiento sobre el funcionamiento de los programas y de los
+						sistemas es uno de mis pasatiempos favoritos.
+					</h1>
+					<h1 class="about-me">
+						A la hora de aprender un nuevo Framework, siempre me enfoco mas en la lógica del lenguaje de
+						programación
+						en vez del Framework en si. Lo que me ha ayudado a aprender diferentes Frameworks para el
+						desarrollo móvil.
+					</h1>
+					<h1 class="about-me">Reconozco la importancia de los dispositivos móviles hoy en día,
+						por
+						lo que siempre es buena idea llevar un sistema al formato para estos dispositivos con el
+						objetivo de crear un sistema rápido y cómodo para el usuario.
+					</h1>
 				</div>
 			</div>
 		</section>
 		<section class="skills" id="skills">
-			<h2 class="title" id="skils">Habilidades</h2>
+			<h2 class="about-me-title" id="skils">Habilidades</h2>
 			<div class="skills-grid">
 				<div class="skills-left">
 					<div class="card">
@@ -148,22 +142,22 @@
 							</div>
 							<h1 class="title_card">Panel informativo.txt</h1>
 						</div>
-						<div class="card__content">
+						<div class="card-content">
 							<h1 class="about_title">Habilidades blandas:</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Trabajo en equipo
+								<i class="fa-solid fa-circle point"></i>Trabajo en equipo
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Gestión de tiempo
+								<i class="fa-solid fa-circle point"></i>Gestión de tiempo
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Inteligencia emocional
+								<i class="fa-solid fa-circle point"></i>Inteligencia emocional
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Puntualidad
+								<i class="fa-solid fa-circle point"></i>Puntualidad
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Responsabilidad
+								<i class="fa-solid fa-circle point"></i>Responsabilidad
 							</h1>
 						</div>
 					</div>
@@ -181,7 +175,7 @@
 							</div>
 							<h1 class="title_card">Panel informativo.txt</h1>
 						</div>
-						<div class="card__content">
+						<div class="card-content">
 							<h1 class="about_title">Experiencia</h1>
 							<h1 class="about_description">
 								Realice practicas profesionales en la Unidad de tecnología de información y
@@ -189,25 +183,25 @@
 								año después en 2024. En mi labor como desarrollador de aplicaciones móviles, realice:
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Actualizar el proyecto de Ionic 6 a 7
+								<i class="fa-solid fa-circle point"></i>Actualizar el proyecto de Ionic 6 a 7
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Arreglos de incompatibilidad con plugins
+								<i class="fa-solid fa-circle point"></i>Arreglos de incompatibilidad con plugins
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Agregar la función de cambio del tamaño
+								<i class="fa-solid fa-circle point"></i>Agregar la función de cambio del tamaño
 								de la letra.
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Agregar funciones de localización del
+								<i class="fa-solid fa-circle point"></i>Agregar funciones de localización del
 								usuario.
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Recopilación de información del
+								<i class="fa-solid fa-circle point"></i>Recopilación de información del
 								dispositivo del usuario
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-chevron-right point"></i>Usar los datos de la localización y del
+								<i class="fa-solid fa-circle point"></i>Usar los datos de la localización y del
 								dispositivo para fortalecer la seguridad del Token del inicio de sesión.
 							</h1>
 							<h1 class="about_description">
@@ -222,83 +216,83 @@
 					<h2 class="subtitle">Fronted</h2>
 					<div class="languajes">
 						<div class="languaje-block">
-							<img src="src\javascript.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\javascript.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">JavaScript</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\Typescript.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\Typescript.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">TypeScript</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\dart.png" alt="Imagen" class="img" loading="lazy">
+							<img src="src\icons\dart.png" alt="Imagen" class="img" loading="lazy">
 							<h1 class="languaje-name">Dart</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\html.jpg" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\html.jpg" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">HTML</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\css.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\css.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">CSS</h1>
 						</div>
 					</div>
 					<h2 class="subtitle">Backend</h2>
 					<div class="languajes">
 						<div class="languaje-block">
-							<img src="src\csharp.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\csharp.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">C#</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\php.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\php.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">PHP</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\java.jpg" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\java.jpg" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">Java</h1>
 						</div>
 					</div>
 					<h2 class="subtitle">Frameworks y Tecnologías</h2>
 					<div class="languajes">
 						<div class="languaje-block">
-							<img src="src\Flutter.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\Flutter.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">Flutter</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\ionic.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\ionic.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">Ionic - Angular</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\react.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\react.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">React Native</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\android.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\android.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">Android</h1>
 						</div>
 					</div>
 					<h2 class="subtitle">Bases de datos</h2>
 					<div class="languajes">
 						<div class="languaje-block">
-							<img src="src\sql server.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\sql server.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">SQL Server</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\mySQL-logo.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\mySQL-logo.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">MySql</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\sqlite.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\sqlite.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">SQLite</h1>
 						</div>
 					</div>
 					<h2 class="subtitle">Extras</h2>
 					<div class="languajes">
 						<div class="languaje-block">
-							<img src="src\Git_icon.png" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\Git_icon.png" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">Git</h1>
 						</div>
 						<div class="languaje-block">
-							<img src="src\firebase.jpg" alt="Imagen" class="img" loading="lazy" />
+							<img src="src\icons\firebase.jpg" alt="Imagen" class="img" loading="lazy" />
 							<h1 class="languaje-name">Firebase</h1>
 						</div>
 					</div>
@@ -310,14 +304,14 @@
 			<h2 class="title">Proyectos</h2>
 			<div class="works-list">
 
-				<div class="works">
+				<!-- <div class="works">
 					<div class="works-left">
 						<h1 class="work-name">Citas medicas</h1>
-						<h1 class="work-desc">Aplicacion de gestion de citas donde el usuario puede programar y manejar
+						<h1 class="work-desc">Aplicación de gestión de citas donde el usuario puede programar y manejar
 							citas medicas, creando un usuario.</h1>
 						<div class="tech">
-							<img src="src\android.png" alt="Imagen" class="img-tech" loading="lazy" />
-							<img src="src\java.jpg" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src/icons/android.png" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src/icons/java.jpg" alt="Imagen" class="img-tech" loading="lazy" />
 						</div>
 						<a href="https://appetize.io/app/b_r3yiffsdta3dkrknxten3xdfsm" class="button-play">
 							<div class="button-left">
@@ -339,7 +333,7 @@
 					<div class="works-right">
 						<img src="src/screenshots/test.jpg" alt="work-screen" class="work-img" />
 					</div>
-				</div>
+				</div> -->
 
 				<div class="works">
 					<div class="works-left">
@@ -349,9 +343,9 @@
 							puede clasificar las tareas según prioridad.
 						</h1>
 						<div class="tech">
-							<img src="src/ionic.png" alt="Imagen" class="img-tech" loading="lazy" />
-							<img src="src/Typescript.png" alt="Imagen" class="img-tech" loading="lazy" />
-							<img src="src/sqlite.png" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src/icons/ionic.png" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src/icons/Typescript.png" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src/icons/sqlite.png" alt="Imagen" class="img-tech" loading="lazy" />
 						</div>
 						<a href="https://appetize.io/app/b_inm3twwfdhl2hvfrldrz3s3fe4" class="button-play">
 							<div class="button-left">
@@ -371,10 +365,10 @@
 						</a>
 					</div>
 					<div class="works-right">
-						<video class="work-img" loop autoplay>
+						<img src="src/screenshots/app-tareas.jpg" alt="work-screen" class="work-img" />
+						<!-- <video class="work-img" controls loop autoplay>
 							<source src="src/videos/app-tareas.mp4" type="video/mp4">
-							<img src="src/screenshots/app-tareas.gif" alt="work-screen" class="work-img" />
-						</video>
+						</video> -->
 					</div>
 				</div>
 
@@ -386,9 +380,9 @@
 							con gente como comentando sus publicaciones, reaccionar y chatear con ellos.
 						</h1>
 						<div class="tech">
-							<img src="src/react.png" alt="Imagen" class="img-tech" loading="lazy" />
-							<img src="src/javascript.png" alt="Imagen" class="img-tech" loading="lazy" />
-							<img src="src/firebase.jpg" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src/icons/react.png" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src/icons/javascript.png" alt="Imagen" class="img-tech" loading="lazy" />
+							<img src="src/icons/firebase.jpg" alt="Imagen" class="img-tech" loading="lazy" />
 						</div>
 						<a href="https://appetize.io/app/b_sdc2qjnxbs7dipu4ng6gruhsba" class="button-play">
 							<div class="button-left">
@@ -408,13 +402,12 @@
 						</a>
 					</div>
 					<div class="works-right">
-						<video class="work-img" loop autoplay>
+						<img src="src/screenshots/appSocial.jpg" alt="work-screen" class="work-img" />
+						<!-- <video class="work-img" controls loop autoplay>
 							<source src="src/videos/appSocial.mp4" type="video/mp4">
-							<img src="src/screenshots/appSocial.gif" alt="work-screen" class="work-img" />
-						</video>
+						</video> -->
 					</div>
 				</div>
-
 			</div>
 		</section>
 	</main>

@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: system-ui;
     font-size: 20px;
     font-weight: normal;
     text-decoration: none;
@@ -40,6 +40,7 @@ section[id] {
 }
 
 .header .h1 .a {
+    font-family: sans-serif;
     color: #37FF8B;
     font-size: 40px;
     font-weight: bold;
@@ -68,6 +69,7 @@ section[id] {
 }
 
 .header .li .a {
+    font-family: sans-serif;
     min-width: 15px;
     color: white;
     display: block;
@@ -83,7 +85,6 @@ section[id] {
 }
 
 .main {
-    margin: 1em 0;
     text-align: center;
 }
 
@@ -114,6 +115,7 @@ section[id] {
 }
 
 .inicio .name {
+    font-family: sans-serif;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -123,6 +125,7 @@ section[id] {
 }
 
 .inicio .level {
+    font-family: sans-serif;
     color: white;
     font-size: 25px;
     margin-top: -40px;
@@ -212,12 +215,26 @@ section[id] {
 }
 
 .email-copy {
+    transition: .5s;
     padding: 12px 20px;
     background-color: #5e5dcd;
     color: #ffffff;
     border-radius: 0 3px 3px 0;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.email-copy:hover {
+    transition: .5s;
+    color: #f6ff00;
+    cursor: pointer;
+}
+
+.email-copy:active {
+    transition: .3s;
+    background-color: #242454;
+    color: #00ffff;
     cursor: pointer;
 }
 
@@ -231,8 +248,8 @@ section[id] {
 .title {
     width: 80%;
     font-size: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 60px;
     color: #37FF8B;
     font-weight: bold;
     text-transform: uppercase;
@@ -248,7 +265,33 @@ section[id] {
 }
 
 .about-content {
+    display: flex;
+    flex-direction: row;
     width: 80%;
+}
+
+.about-me {
+    color: #fff;
+    text-align: left;
+}
+
+.about-me-title {
+    width: 80%;
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #37FF8B;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.about-left {
+    width: 10px;
+    height: auto;
+    margin-right: 20px;
+    background-color: #37FF8B;
+    border-radius: 5px;
 }
 
 .skills {
