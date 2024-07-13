@@ -21,7 +21,6 @@ function togglePhone() {
 function viewCV() {
     window.open("src/docs/Curriculum.pdf", "Curriculum vitae", "fullscreen=yes");
     parent.opener = top;
-    opener.close();
 }
 
 const copyEmail = async () => {
