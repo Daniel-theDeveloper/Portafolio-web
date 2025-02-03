@@ -47,7 +47,7 @@ const translation = {
         language: "Change language",
         profession: "Movil app Developer",
         resume: "View resume",
-        info: "More information",
+        info: "Information",
         level: "Full-Stack Developer",
         fullname: "Full name",
         phone: "Phone number",

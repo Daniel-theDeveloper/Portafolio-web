@@ -127,6 +127,7 @@ section[id] {
 .inicio .level {
     font-family: sans-serif;
     color: white;
+    min-width: 428px;
     font-size: 25px;
     margin-top: -40px;
 }
