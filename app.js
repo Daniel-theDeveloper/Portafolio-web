@@ -29,7 +29,7 @@ const copyEmail = async () => {
         btnEmailCopy.classList.remove("fa-copy");
         btnEmailCopy.classList.add("fa-check");
     } catch (err) {
-        alert("Error en la función, detalles: "+err);
+        alert("Error en la función, detalles: " + err);
     }
 }
 

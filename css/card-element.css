@@ -57,7 +57,7 @@
 }
 
 .about_title {
-    color: #00ffff;
+    color: #00e2e2;
     font-size: 24px;
     font-weight: bold;
     margin: 0;
@@ -77,5 +77,11 @@
     margin-left: 20px;
     margin-right: 10px;
     font-size: 8px;
-    color: #00ca4e;
+    color: #0ee460;
+}
+
+.vignette {
+    margin: 0;
+    font-size: 17px;
+    color: #fff;
 }

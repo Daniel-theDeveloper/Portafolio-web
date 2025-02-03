@@ -8,13 +8,14 @@
 	<link rel="stylesheet" href="css/works-element.css" />
 	<link rel="stylesheet" href="css/phone.css" />
 	<script defer src="app.js"></script>
+	<script defer type="module" src="languages.js"></script>
 	<script src="https://kit.fontawesome.com/632150b31f.js" crossorigin="anonymous"></script>
 	<title>Portafolio</title>
 </head>
 
 <body>
 	<header class="header">
-		<h1 class="h1"><a href="#" class="a">Portafolio</a></h1>
+		<h1 class="h1"><a href="#" class="a" data-translate="portfolio"></a></h1>
 		<button class="open-menu" aria-label="open-menu">
 			<img src="src\icons\menu.png" alt="menu" class="menu_buttom_open">
 		</button>
@@ -23,10 +24,11 @@
 		</button>
 		<nav class="nav">
 			<ul class="ul">
-				<li class="li"><a href="#inicio" class="a">Inicio</a></li>
-				<li class="li"><a href="#about" class="a">Acerca de mi</a></li>
-				<li class="li"><a href="#skils" class="a">Habilidades</a></li>
-				<li class="li"><a href="#works" class="a">Proyectos</a></li>
+				<li class="li"><a href="#inicio" class="a" data-translate="home"></a></li>
+				<li class="li"><a href="#about" class="a" data-translate="about"></a></li>
+				<li class="li"><a href="#skills" class="a" data-translate="skills"></a></li>
+				<li class="li"><a href="#works" class="a" data-translate="works"></a></li>
+				<li class="li"><a href="#" class="a language" data-translate="language"></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -35,15 +37,15 @@
 		<section class="inicio" id="inicio">
 			<div class="section">
 				<h2 class="name">Daniel Alfaro</h2>
-				<h3 class="level">Desarrollador de aplicaciones móviles.</h3>
+				<h3 class="level" data-translate="profession"></h3>
 				<div class="buttons-block">
 					<a href="#" class="cv">
 						<i class="fa-regular fa-file-pdf cv-text"></i>
-						<h1 class="cv-text">Ver curriculum</h1>
+						<h1 class="cv-text" data-translate="resume"></h1>
 					</a>
 					<a href="#" class="more" aria-label="more">
 						<i class="fa-regular fa-address-card more-text"></i>
-						<h1 class="more-text">Mas información</h1>
+						<h1 class="more-text" data-translate="info"></h1>
 					</a>
 				</div>
 				<div class="email-box">
@@ -67,7 +69,7 @@
 						<i class="fa-solid fa-battery-full battery"></i>
 
 						<img src="src\20221103_122846.jpg" alt="Imagen" class="perfil" loading="lazy">
-						<h1 class="perfil-title">Full-Stack Developer</h1>
+						<h1 class="perfil-title" data-translate="level"></h1>
 						<div class="social-block">
 							<a class="social_media" href="www.linkedin.com/in/daniel-alfaro-gamez-116053316">
 								<i class="fa-brands fa-linkedin social"></i>
@@ -77,11 +79,11 @@
 							</a>
 						</div>
 						<div class="phone-block">
-							<h1 class="phone-block-text">Nombre completo</h1>
+							<h1 class="phone-block-text" data-translate="fullname"></h1>
 							<h1 class="phone-block-text-2">Daniel Antonio Alfaro Gamez</h1>
 						</div>
 						<div class="phone-block">
-							<h1 class="phone-block-text">Teléfono</h1>
+							<h1 class="phone-block-text" data-translate="phone"></h1>
 							<h1 class="phone-block-text-2">(503) 7000-0229</h1>
 						</div>
 						<div class="phone-footer"></div>
@@ -99,34 +101,18 @@
 		</section>
 
 		<section class="acerca_de" id="about">
-			<h2 class="about-me-title">Acerca de mi</h2>
+			<h2 class="about-me-title" data-translate="about"></h2>
 			<div class="about-content">
 				<div class="about-left"></div>
 				<div class="about-right">
-					<h1 class="about-me">Ingeniero en Sistemas y Computación especializado en las ciencias
-						de
-						datos y en el desarrollo de aplicaciones móviles. Graduado de la Universidad Tecnológica de
-						El
-						Salvador en 2024. Mi pasión siempre ha sido las ciencias y la
-						tecnología, por lo que el descubrimiento sobre el funcionamiento de los programas y de los
-						sistemas es uno de mis pasatiempos favoritos.
-					</h1>
-					<h1 class="about-me">
-						A la hora de aprender un nuevo Framework, siempre me enfoco mas en la lógica del lenguaje de
-						programación
-						en vez del Framework en si. Lo que me ha ayudado a aprender diferentes Frameworks para el
-						desarrollo móvil.
-					</h1>
-					<h1 class="about-me">Reconozco la importancia de los dispositivos móviles hoy en día,
-						por
-						lo que siempre es buena idea llevar un sistema al formato para estos dispositivos con el
-						objetivo de crear un sistema rápido y cómodo para el usuario.
-					</h1>
+					<h1 class="about-me" data-translate="description1"></h1>
+					<h1 class="about-me" data-translate="description2"></h1>
+					<h1 class="about-me" data-translate="description3"></h1>
 				</div>
 			</div>
 		</section>
 		<section class="skills" id="skills">
-			<h2 class="about-me-title" id="skils">Habilidades</h2>
+			<h2 class="about-me-title" id="skills" data-translate="skills"></h2>
 			<div class="skills-grid">
 				<div class="skills-left">
 					<div class="card">
@@ -140,24 +126,24 @@
 							<div class="circle">
 								<span class="green box"></span>
 							</div>
-							<h1 class="title_card">Panel informativo.txt</h1>
+							<h1 class="title_card"></h1>
 						</div>
 						<div class="card-content">
-							<h1 class="about_title">Habilidades blandas:</h1>
+							<h1 class="about_title" data-translate="soft"></h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Trabajo en equipo
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="teamwork"></p>
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Gestión de tiempo
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="time"></p>
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Inteligencia emocional
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="emotional"></p>
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Puntualidad
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="punctuality"></p>
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Responsabilidad
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="responsibility"></p>
 							</h1>
 						</div>
 					</div>
@@ -173,127 +159,112 @@
 							<div class="circle">
 								<span class="green box"></span>
 							</div>
-							<h1 class="title_card">Panel informativo.txt</h1>
+							<h1 class="title_card"></h1>
 						</div>
 						<div class="card-content">
-							<h1 class="about_title">Experiencia</h1>
+							<h1 class="about_title" data-translate="experience"></h1>
+							<h1 class="about_description" data-translate="about_exp1"></h1>
 							<h1 class="about_description">
-								Realice practicas profesionales en la Unidad de tecnología de información y
-								telecomunicaciones de Institución publica (UTIT) desde el mes de enero en 2023 y finalizando un
-								año después en 2024. En mi labor como desarrollador de aplicaciones móviles, realice:
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="task1"></p>
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Actualizar el proyecto de Ionic 6 a 7
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="task2"></p>
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Arreglos de incompatibilidad con plugins
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="task3"></p>
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Agregar la función de cambio del tamaño
-								de la letra.
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="task4"></p>
 							</h1>
 							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Agregar funciones de localización del
-								usuario.
+								<i class="fa-solid fa-circle point"></i><p class="vignette" data-translate="task5"></p>
 							</h1>
-							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Recopilación de información del
-								dispositivo del usuario
-							</h1>
-							<h1 class="about_description">
-								<i class="fa-solid fa-circle point"></i>Usar los datos de la localización y del
-								dispositivo para fortalecer la seguridad del Token del inicio de sesión.
-							</h1>
-							<h1 class="about_description">
-								Actualmente me dedico al desarrollo de aplicaciones móviles personales con el objetivo
-								de
-								aprender nuevas tecnologías y al crecimiento de conocimientos personal.
-							</h1>
+							<h1 class="about_description" <p data-translate="about_exp2"></p>></h1>
 						</div>
 					</div>
 				</div>
 				<div class="skills-right">
 					<h2 class="subtitle">Fronted</h2>
-					<div class="languajes">
-						<div class="languaje-block">
+					<div class="languages">
+						<div class="language-block">
 							<img src="src\icons\javascript.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">JavaScript</h1>
+							<h1 class="language-name">JavaScript</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\Typescript.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">TypeScript</h1>
+							<h1 class="language-name">TypeScript</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\dart.png" alt="Imagen" class="img" loading="lazy">
-							<h1 class="languaje-name">Dart</h1>
+							<h1 class="language-name">Dart</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\html.jpg" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">HTML</h1>
+							<h1 class="language-name">HTML</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\css.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">CSS</h1>
+							<h1 class="language-name">CSS</h1>
 						</div>
 					</div>
 					<h2 class="subtitle">Backend</h2>
-					<div class="languajes">
-						<div class="languaje-block">
+					<div class="languages">
+						<div class="language-block">
 							<img src="src\icons\csharp.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">C#</h1>
+							<h1 class="language-name">C#</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\php.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">PHP</h1>
+							<h1 class="language-name">PHP</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\java.jpg" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">Java</h1>
+							<h1 class="language-name">Java</h1>
 						</div>
 					</div>
 					<h2 class="subtitle">Frameworks y Tecnologías</h2>
-					<div class="languajes">
-						<div class="languaje-block">
+					<div class="languages">
+						<div class="language-block">
 							<img src="src\icons\Flutter.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">Flutter</h1>
+							<h1 class="language-name">Flutter</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\ionic.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">Ionic - Angular</h1>
+							<h1 class="language-name">Ionic - Angular</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\react.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">React Native</h1>
+							<h1 class="language-name">React Native</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\android.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">Android</h1>
+							<h1 class="language-name">Android</h1>
 						</div>
 					</div>
-					<h2 class="subtitle">Bases de datos</h2>
-					<div class="languajes">
-						<div class="languaje-block">
+					<h2 class="subtitle" data-translate="databases"></h2>
+					<div class="languages">
+						<div class="language-block">
 							<img src="src\icons\sql server.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">SQL Server</h1>
+							<h1 class="language-name">SQL Server</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\mySQL-logo.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">MySql</h1>
+							<h1 class="language-name">MySql</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\sqlite.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">SQLite</h1>
+							<h1 class="language-name">SQLite</h1>
 						</div>
 					</div>
 					<h2 class="subtitle">Extras</h2>
-					<div class="languajes">
-						<div class="languaje-block">
+					<div class="languages">
+						<div class="language-block">
 							<img src="src\icons\Git_icon.png" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">Git</h1>
+							<h1 class="language-name">Git</h1>
 						</div>
-						<div class="languaje-block">
+						<div class="language-block">
 							<img src="src\icons\firebase.jpg" alt="Imagen" class="img" loading="lazy" />
-							<h1 class="languaje-name">Firebase</h1>
+							<h1 class="language-name">Firebase</h1>
 						</div>
 					</div>
 				</div>
@@ -301,7 +272,7 @@
 		</section>
 		</section>
 		<section class="trabajos" id="works">
-			<h2 class="title">Proyectos</h2>
+			<h2 class="title" data-translate="works"></h2>
 			<div class="works-list">
 
 				<!-- <div class="works">
@@ -337,11 +308,8 @@
 
 				<div class="works">
 					<div class="works-left">
-						<h1 class="work-name">Gestión de tareas</h1>
-						<h1 class="work-desc">
-							Aplicación donde los usuarios pueden crear, gestionar y verificar sus tareas, la aplicación
-							puede clasificar las tareas según prioridad.
-						</h1>
+						<h1 class="work-name" data-translate="work1"></h1>
+						<h1 class="work-desc" data-translate="work1_about"></h1>
 						<div class="tech">
 							<img src="src/icons/ionic.png" alt="Imagen" class="img-tech" loading="lazy" />
 							<img src="src/icons/Typescript.png" alt="Imagen" class="img-tech" loading="lazy" />
@@ -352,7 +320,7 @@
 								<i class="fa-solid fa-play"></i>
 							</div>
 							<div class="button-right">
-								<h1 class="button-text">Probar demo</h1>
+								<h1 class="button-text" data-translate="demo"></h1>
 							</div>
 						</a>
 						<a href="https://github.com/Daniel-theDeveloper/app-tareas" class="button-code">
@@ -360,7 +328,7 @@
 								<i class="fa-brands fa-github"></i>
 							</div>
 							<div class="button-right">
-								<h1 class="button-text">Ver código fuente</h1>
+								<h1 class="button-text" data-translate="code"></h1>
 							</div>
 						</a>
 					</div>
@@ -374,11 +342,8 @@
 
 				<div class="works">
 					<div class="works-left">
-						<h1 class="work-name">Red social</h1>
-						<h1 class="work-desc">
-							Una red social donde los usuarios podrán compartir sus pensamientos, ademas de interactuar
-							con gente como comentando sus publicaciones, reaccionar y chatear con ellos.
-						</h1>
+						<h1 class="work-name" data-translate="work2"></h1>
+						<h1 class="work-desc" data-translate="work2_about"></h1>
 						<div class="tech">
 							<img src="src/icons/react.png" alt="Imagen" class="img-tech" loading="lazy" />
 							<img src="src/icons/javascript.png" alt="Imagen" class="img-tech" loading="lazy" />
@@ -389,7 +354,7 @@
 								<i class="fa-solid fa-play"></i>
 							</div>
 							<div class="button-right">
-								<h1 class="button-text">Probar demo</h1>
+								<h1 class="button-text" data-translate="demo"></h1>
 							</div>
 						</a>
 						<a href="https://github.com/Daniel-theDeveloper/appSocial" class="button-code">
@@ -397,7 +362,7 @@
 								<i class="fa-brands fa-github"></i>
 							</div>
 							<div class="button-right">
-								<h1 class="button-text">Ver código fuente</h1>
+								<h1 class="button-text" data-translate="code"></h1>
 							</div>
 						</a>
 					</div>
