@@ -23,7 +23,7 @@
 .works:hover {
     transition: 1s ease;
     background-color: #313169;
-    box-shadow: 0px 0px 20px 4px #00ffff;
+    box-shadow: 0px 0px 20px 4px #313169;
 }
 
 .works-left {
